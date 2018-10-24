@@ -1,0 +1,29 @@
+Script started on Fri 28 Sep 2018 10:46:47 PM PDT
+]0;vuqt1@andromeda-43:~/141/hw0[01;30m# [0;36mvuqt1[0;37m@[0;32mandromeda-43 [0;33m~/141/hw0 [0;37m[22:46:48] 
+[01;31m$[0;37m make tse[K[Kest
+create_script main.cpp main
+==21052== Memcheck, a memory error detector
+==21052== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21052== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==21052== Command: main
+==21052== 
+==21052== 
+==21052== HEAP SUMMARY:
+==21052==     in use at exit: 72,704 bytes in 1 blocks
+==21052==   total heap usage: 1 allocs, 0 frees, 72,704 bytes allocated
+==21052== 
+==21052== LEAK SUMMARY:
+==21052==    definitely lost: 0 bytes in 0 blocks
+==21052==    indirectly lost: 0 bytes in 0 blocks
+==21052==      possibly lost: 0 bytes in 0 blocks
+==21052==    still reachable: 72,704 bytes in 1 blocks
+==21052==         suppressed: 0 bytes in 0 blocks
+==21052== Rerun with --leak-check=full to see details of leaked memory
+==21052== 
+==21052== For counts of detected and suppressed errors, rerun with: -v
+==21052== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;vuqt1@andromeda-43:~/141/hw0[01;30m# [0;36mvuqt1[0;37m@[0;32mandromeda-43 [0;33m~/141/hw0 [0;37m[22:47:02] 
+[01;31m$[0;37m exit
+exit
+
+Script done on Fri 28 Sep 2018 10:47:05 PM PDT

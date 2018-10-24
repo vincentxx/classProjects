@@ -1,0 +1,137 @@
+Script started on Sat 13 Oct 2018 11:20:00 PM PDT
+]0;vuqt1@andromeda-43:~/141/hw2[01;30m# [0;36mvuqt1[0;37m@[0;32mandromeda-43 [0;33m~/141/hw2 [0;37m[23:20:00] 
+[01;31m$[0;37m make test
+create_script ShapeTest.c ShapeTest
+[01m[KShapeTest.c:[m[K In function ‘[01m[KCircle_Circle[m[K’:
+[01m[KShapeTest.c:132:19:[m[K [01;35m[Kwarning: [m[Kassignment from incompatible pointer type [-Wincompatible-pointer-types]
+    this->vPointer = Circle_Vtable;
+[01;32m[K                   ^[m[K
+==27756== Memcheck, a memory error detector
+==27756== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27756== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27756== Command: ShapeTest
+==27756== 
+==27756== 
+==27756== HEAP SUMMARY:
+==27756==     in use at exit: 2,208 bytes in 8 blocks
+==27756==   total heap usage: 8 allocs, 0 frees, 2,208 bytes allocated
+==27756== 
+==27756== LEAK SUMMARY:
+==27756==    definitely lost: 2,208 bytes in 8 blocks
+==27756==    indirectly lost: 0 bytes in 0 blocks
+==27756==      possibly lost: 0 bytes in 0 blocks
+==27756==    still reachable: 0 bytes in 0 blocks
+==27756==         suppressed: 0 bytes in 0 blocks
+==27756== Rerun with --leak-check=full to see details of leaked memory
+==27756== 
+==27756== For counts of detected and suppressed errors, rerun with: -v
+==27756== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;vuqt1@andromeda-43:~/141/hw2[01;30m# [0;36mvuqt1[0;37m@[0;32mandromeda-43 [0;33m~/141/hw2 [0;37m[23:20:06] 
+[01;31m$[0;37m exit[K[K[K[Kman valgrind
+[?1049h[?1h=VALGRIND(1)                                        Release 3.13.0                                       VALGRIND(1)[m
+[m
+[1mNAME[0m[m
+       valgrind - a suite of tools for debugging and profiling programs[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mvalgrind[0m [[4mvalgrind-options[24m] [[1myour-program[0m] [[4myour-program-options[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mValgrind[0m is a flexible program for debugging and profiling Linux executables. It consists of a core, which[m
+       provides a synthetic CPU in software, and a series of debugging and profiling tools. The architecture is[m
+       modular, so that new tools can be created easily and without disturbing the existing structure.[m
+[m
+       Some of the options described below work with all Valgrind tools, and some only work with a few or one. The[m
+       section MEMCHECK OPTIONS and those below it describe tool-specific options.[m
+[m
+       This manual page covers only basic usage and options. For more comprehensive information, please see the[m
+       HTML documentation on your system: $INSTALL/share/doc/valgrind/html/index.html, or online:[m
+       http://www.valgrind.org/docs/manual/index.html.[m
+[m
+[1mTOOL[0m [1mSELECTION[0m [1mOPTIONS[0m[m
+       The single most important option.[m
+[m
+       [1m--tool=<toolname>[0m [1m[default:[0m [1mmemcheck][0m[m
+           Run the Valgrind tool called [4mtoolname[24m, e.g. memcheck, cachegrind, callgrind, helgrind, drd, massif,[m
+           lackey, none, exp-sgcheck, exp-bbv, exp-dhat, etc.[m
+[m
+[1mBASIC[0m [1mOPTIONS[0m[m
+       These options work with all tools.[m
+[3m Manual page valgrind(1) line 1 (press h for help or q to quit)[23m[K[K[m
+[3m Manual page valgrind(1) line 2 (press h for help or q to quit)[23m[K[K       [1m-h[0m [1m--help[0m[m
+[3m Manual page valgrind(1) line 5 (press h for help or q to quit)[23m[K[K/[Kqq[K[1;1H[1mNAME[0m[m
+[2;1H       valgrind - a suite of tools for debugging and profiling programs[m
+[3;1H[m
+[4;1H[1mSYNOPSIS[0m[m
+[5;1H       [1mvalgrind[0m [[4mvalgrind-options[24m] [[1myour-program[0m] [[4myour-program-options[24m][m
+[6;1H[m
+[7;1H[1mDESCRIPTION[0m[m
+[8;1H       [1mValgrind[0m is a flexible program for debugging and profiling Linux executables. It consists of a core, which[m
+[9;1H       provides a synthetic CPU in software, and a series of debugging and profiling tools. The architecture is[m
+[10;1H       modular, so that new tools can be created easily and without disturbing the existing structure.[m
+[11;1H[m
+[12;1H       Some of the options described below work with all Valgrind tools, and some only work with a few or one. The[m
+[13;1H       section MEMCHECK OPTIONS and those below it describe tool-specific options.[m
+[14;1H[m
+[15;1H       This manual page covers only basic usage and options. For more comprehensive information, please see the[m
+[16;1H       HTML documentation on your system: $INSTALL/share/doc/valgrind/html/index.html, or online:[m
+[17;1H       http://www.valgrind.org/docs/manual/index.html.[m
+[18;1H[m
+[19;1H[1mTOOL[0m [1mSELECTION[0m [1mOPTIONS[0m[m
+[20;1H       The single most important option.[m
+[21;1H[m
+[22;1H       [1m--tool=<toolname>[0m [1m[default:[0m [1mmemcheck][0m[m
+[23;1H           Run the Valgrind tool called [4mtoolname[24m, e.g. memcheck, cachegrind, callgrind, helgrind, drd, massif,[m
+[24;1H           lackey, none, exp-sgcheck, exp-bbv, exp-dhat, etc.[m
+[25;1H[m
+[26;1H[1mBASIC[0m [1mOPTIONS[0m[m
+[27;1H       These options work with all tools.[m
+[28;1H[m
+[29;1H       [1m-h[0m [1m--help[0m[m
+[30;1H[1;1H[1mNAME[0m[m
+[2;1H       valgrind - a suite of tools for debugging and profiling programs[m
+[3;1H[m
+[4;1H[1mSYNOPSIS[0m[m
+[5;1H       [1mvalgrind[0m [[4mvalgrind-options[24m] [[1myour-program[0m] [[4myour-program-options[24m][m
+[6;1H[m
+[7;1H[1mDESCRIPTION[0m[m
+[8;1H       [1mValgrind[0m is a flexible program for debugging and profiling Linux executables. It consists of a core, which[m
+[9;1H       provides a synthetic CPU in software, and a series of debugging and profiling tools. The architecture is[m
+[10;1H       modular, so that new tools can be created easily and without disturbing the existing structure.[m
+[11;1H[m
+[12;1H       Some of the options described below work with all Valgrind tools, and some only work with a few or one. The[m
+[13;1H       section MEMCHECK OPTIONS and those below it describe tool-specific options.[m
+[14;1H[m
+[15;1H       This manual page covers only basic usage and options. For more comprehensive information, please see the[m
+[16;1H       HTML documentation on your system: $INSTALL/share/doc/valgrind/html/index.html, or online:[m
+[17;1H       http://www.valgrind.org/docs/manual/index.html.[m
+[18;1H[m
+[19;1H[1mTOOL[0m [1mSELECTION[0m [1mOPTIONS[0m[m
+[20;1H       The single most important option.[m
+[21;1H[m
+[22;1H       [1m--tool=<toolname>[0m [1m[default:[0m [1mmemcheck][0m[m
+[23;1H           Run the Valgrind tool called [4mtoolname[24m, e.g. memcheck, cachegrind, callgrind, helgrind, drd, massif,[m
+[24;1H           lackey, none, exp-sgcheck, exp-bbv, exp-dhat, etc.[m
+[25;1H[m
+[26;1H[1mBASIC[0m [1mOPTIONS[0m[m
+[27;1H       These options work with all tools.[m
+[28;1H[m
+[29;1H       [1m-h[0m [1m--help[0m[m
+[30;1H...skipping...
+           e[3mq[23muivalent to giving [1m--help-debug[0m.[m
+[m
+       [1m--help-debug[0m[m
+           Same as [1m--help[0m, but also lists debugging options which usually are only of use to Valgrind's developers.[m
+[m
+       [1m--version[0m[m
+           Show the version number of the Valgrind core. Tools can have their own version numbers. There is a[m
+           scheme in place to ensure that tools only execute when the core version is one they are known to work[m
+           with. This was done to minimise the chances of strange problems arising from tool-vs-core version[m
+           incompatibilities.[m
+[m
+       [1m-[0m[1m[3mq[23m[0m, [1m--[0m[1m[3mq[23m[0m[1muiet[0m[m
+           Run silently, and only print error messages. Useful if you are running regression tests or have some[m
+           other automated test machinery.[m
+[m
+       [1m-v[0m, [1m--verbose[0m[m
+           Be more verbose
