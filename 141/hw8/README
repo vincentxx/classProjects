@@ -1,0 +1,294 @@
+VERSION WORK FOR HOMEWORK 8 ONLY, NOT FOR HOMEWORK 9.
+
+Testing on openlab
+Run this command to compile and run the demo:
+$javac mainClass.java  && java mainClass
+
+All classes are in only one file mainClass.java
+Thanks,
+
+==============Below is the output of testing============================
+
+141OS Start Simulation !!
+UserThread USER1 start writing to file W1
+UserThread USER1 request DiskManager to write this line: 1.W1 W1111111
+UserThread USER1 request DiskManager to write this line: 1.W1 W2222222
+UserThread USER1 request DiskManager to write this line: 1.W1 W3333333
+UserThread USER1 request DiskManager to write this line: 1.W1 W4444444
+UserThread USER1 request DiskManager to write this line: 1.W1 W5555555
+UserThread USER1 request DiskManager to print this file: W1
+DiskManager printing file: W1 on disk: 1 starting at sector: 0
+1.W1 W1111111
+1.W1 W2222222
+1.W1 W3333333
+1.W1 W4444444
+1.W1 W5555555
+EOF
+UserThread USER1 request DiskManager to print this file: W1
+DiskManager printing file: W1 on disk: 1 starting at sector: 0
+1.W1 W1111111
+1.W1 W2222222
+1.W1 W3333333
+1.W1 W4444444
+1.W1 W5555555
+EOF
+UserThread USER1 start writing to file X1
+UserThread USER1 request DiskManager to write this line: 1.X1 X1111111
+UserThread USER1 request DiskManager to write this line: 1.X1 X2222222
+UserThread USER1 request DiskManager to write this line: 1.X1 X3333333
+UserThread USER1 request DiskManager to write this line: 1.X1 X4444444
+UserThread USER1 request DiskManager to write this line: 1.X1 X5555555
+UserThread USER1 request DiskManager to print this file: X1
+DiskManager printing file: X1 on disk: 1 starting at sector: 1
+1.X1 X1111111
+1.X1 X2222222
+1.X1 X3333333
+1.X1 X4444444
+1.X1 X5555555
+EOF
+UserThread USER1 request DiskManager to print this file: W1
+DiskManager printing file: W1 on disk: 1 starting at sector: 0
+1.W1 W1111111
+1.X1 X1111111
+1.X1 X2222222
+1.X1 X3333333
+1.X1 X4444444
+1.X1 X5555555
+UserThread USER1 start writing to file Y1
+UserThread USER1 request DiskManager to write this line: 1.Y1 Y1111111
+UserThread USER1 request DiskManager to write this line: 1.Y1 Y2222222
+UserThread USER1 request DiskManager to write this line: 1.Y1 Y3333333
+UserThread USER1 request DiskManager to write this line: 1.Y1 Y4444444
+UserThread USER1 request DiskManager to write this line: 1.Y1 Y5555555
+UserThread USER1 start writing to file Z1
+UserThread USER1 request DiskManager to write this line: 1.Z1 Z1111111
+UserThread USER1 request DiskManager to write this line: 1.Z1 Z2222222
+UserThread USER1 request DiskManager to write this line: 1.Z1 Z3333333
+UserThread USER1 request DiskManager to write this line: 1.Z1 Z4444444
+UserThread USER1 request DiskManager to write this line: 1.Z1 Z5555555
+UserThread USER1 request DiskManager to print this file: Z1
+DiskManager printing file: Z1 on disk: 1 starting at sector: 3
+1.Z1 Z1111111
+1.Z1 Z2222222
+1.Z1 Z3333333
+1.Z1 Z4444444
+1.Z1 Z5555555
+EOF
+UserThread USER1 request DiskManager to print this file: Y1
+DiskManager printing file: Y1 on disk: 1 starting at sector: 2
+1.Y1 Y1111111
+1.Z1 Z1111111
+1.Z1 Z2222222
+1.Z1 Z3333333
+1.Z1 Z4444444
+1.Z1 Z5555555
+UserThread USER1 request DiskManager to print this file: X1
+DiskManager printing file: X1 on disk: 1 starting at sector: 1
+1.X1 X1111111
+1.Y1 Y1111111
+1.Z1 Z1111111
+1.Z1 Z2222222
+1.Z1 Z3333333
+1.Z1 Z4444444
+UserThread USER1 request DiskManager to print this file: W1
+DiskManager printing file: W1 on disk: 1 starting at sector: 0
+1.W1 W1111111
+1.X1 X1111111
+1.Y1 Y1111111
+1.Z1 Z1111111
+1.Z1 Z2222222
+1.Z1 Z3333333
+UserThread USER2 start writing to file Y2
+UserThread USER2 request DiskManager to write this line: 2.Y1 Y1111111
+UserThread USER2 request DiskManager to write this line: 2.Y2 Y2222222
+UserThread USER2 request DiskManager to write this line: 2.Y3 Y3333333
+UserThread USER2 request DiskManager to write this line: 2.Y4 Y4444444
+UserThread USER2 request DiskManager to write this line: 2.Y5 Y5555555
+UserThread USER2 request DiskManager to write this line: 2.Y6 Y6666666
+UserThread USER2 request DiskManager to write this line: 2.Y7 Y7777777
+UserThread USER2 request DiskManager to write this line: 2.Y8 Y8888888
+UserThread USER2 request DiskManager to write this line: 2.Y9 Y9999999
+UserThread USER2 request DiskManager to print this file: Y2
+DiskManager printing file: Y2 on disk: 1 starting at sector: 4
+2.Y1 Y1111111
+2.Y2 Y2222222
+2.Y3 Y3333333
+2.Y4 Y4444444
+2.Y5 Y5555555
+2.Y6 Y6666666
+2.Y7 Y7777777
+2.Y8 Y8888888
+2.Y9 Y9999999
+EOF
+UserThread USER2 request DiskManager to print this file: Y2
+DiskManager printing file: Y2 on disk: 1 starting at sector: 4
+2.Y1 Y1111111
+2.Y2 Y2222222
+2.Y3 Y3333333
+2.Y4 Y4444444
+2.Y5 Y5555555
+2.Y6 Y6666666
+2.Y7 Y7777777
+2.Y8 Y8888888
+2.Y9 Y9999999
+EOF
+UserThread USER2 request DiskManager to print this file: Y2
+DiskManager printing file: Y2 on disk: 1 starting at sector: 4
+2.Y1 Y1111111
+2.Y2 Y2222222
+2.Y3 Y3333333
+2.Y4 Y4444444
+2.Y5 Y5555555
+2.Y6 Y6666666
+2.Y7 Y7777777
+2.Y8 Y8888888
+2.Y9 Y9999999
+EOF
+UserThread USER2 request DiskManager to print this file: Y2
+DiskManager printing file: Y2 on disk: 1 starting at sector: 4
+2.Y1 Y1111111
+2.Y2 Y2222222
+2.Y3 Y3333333
+2.Y4 Y4444444
+2.Y5 Y5555555
+2.Y6 Y6666666
+2.Y7 Y7777777
+2.Y8 Y8888888
+2.Y9 Y9999999
+EOF
+UserThread USER2 request DiskManager to print this file: Y2
+DiskManager printing file: Y2 on disk: 1 starting at sector: 4
+2.Y1 Y1111111
+2.Y2 Y2222222
+2.Y3 Y3333333
+2.Y4 Y4444444
+2.Y5 Y5555555
+2.Y6 Y6666666
+2.Y7 Y7777777
+2.Y8 Y8888888
+2.Y9 Y9999999
+EOF
+UserThread USER3 start writing to file BAR3
+UserThread USER3 request DiskManager to write this line: 3.BAR1 11111111
+UserThread USER3 request DiskManager to write this line: 3.BAR2 22222222
+UserThread USER3 request DiskManager to write this line: 3.BAR3 33333333
+UserThread USER3 request DiskManager to write this line: 3.BAR4 44444444
+UserThread USER3 request DiskManager to write this line: 3.BAR5 55555555
+UserThread USER3 request DiskManager to print this file: BAR3
+DiskManager printing file: BAR3 on disk: 1 starting at sector: 5
+3.BAR1 11111111
+3.BAR2 22222222
+3.BAR3 33333333
+3.BAR4 44444444
+3.BAR5 55555555
+EOF
+UserThread USER3 request DiskManager to print this file: BAR3
+DiskManager printing file: BAR3 on disk: 1 starting at sector: 5
+3.BAR1 11111111
+3.BAR2 22222222
+3.BAR3 33333333
+3.BAR4 44444444
+3.BAR5 55555555
+EOF
+UserThread USER3 request DiskManager to print this file: BAR3
+DiskManager printing file: BAR3 on disk: 1 starting at sector: 5
+3.BAR1 11111111
+3.BAR2 22222222
+3.BAR3 33333333
+3.BAR4 44444444
+3.BAR5 55555555
+EOF
+UserThread USER4 start writing to file F4
+UserThread USER4 request DiskManager to write this line: 4.F1 11111111
+UserThread USER4 request DiskManager to write this line: 4.F2 22222222
+UserThread USER4 request DiskManager to write this line: 4.F3 33333333
+UserThread USER4 request DiskManager to write this line: 4.F4 44444444
+UserThread USER4 request DiskManager to write this line: 4.F5 55555555
+UserThread USER4 request DiskManager to print this file: F4
+DiskManager printing file: F4 on disk: 1 starting at sector: 6
+4.F1 11111111
+4.F2 22222222
+4.F3 33333333
+4.F4 44444444
+4.F5 55555555
+EOF
+UserThread USER4 start writing to file W4
+UserThread USER4 request DiskManager to write this line: 4.W1 W1111111
+UserThread USER4 request DiskManager to write this line: 4.W2 W2222222
+UserThread USER4 request DiskManager to write this line: 4.W3 W3333333
+UserThread USER4 request DiskManager to write this line: 4.W4 W4444444
+UserThread USER4 request DiskManager to write this line: 4.W5 W5555555
+UserThread USER4 request DiskManager to print this file: W4
+DiskManager printing file: W4 on disk: 1 starting at sector: 7
+4.W1 W1111111
+4.W2 W2222222
+4.W3 W3333333
+4.W4 W4444444
+4.W5 W5555555
+EOF
+UserThread USER4 request DiskManager to print this file: W4
+DiskManager printing file: W4 on disk: 1 starting at sector: 7
+4.W1 W1111111
+4.W2 W2222222
+4.W3 W3333333
+4.W4 W4444444
+4.W5 W5555555
+EOF
+UserThread USER4 start writing to file X4
+UserThread USER4 request DiskManager to write this line: 4.X1 X1111111
+UserThread USER4 request DiskManager to write this line: 4.X2 X2222222
+UserThread USER4 request DiskManager to write this line: 4.X3 X3333333
+UserThread USER4 request DiskManager to write this line: 4.X4 X4444444
+UserThread USER4 request DiskManager to write this line: 4.X5 X5555555
+UserThread USER4 request DiskManager to print this file: X4
+DiskManager printing file: X4 on disk: 1 starting at sector: 8
+4.X1 X1111111
+4.X2 X2222222
+4.X3 X3333333
+4.X4 X4444444
+4.X5 X5555555
+EOF
+UserThread USER4 start writing to file Y4
+UserThread USER4 request DiskManager to write this line: 4.Y1 Y1111111
+UserThread USER4 request DiskManager to write this line: 4.Y2 Y2222222
+UserThread USER4 request DiskManager to write this line: 4.Y3 Y3333333
+UserThread USER4 request DiskManager to write this line: 4.Y4 Y4444444
+UserThread USER4 request DiskManager to write this line: 4.Y5 Y5555555
+UserThread USER4 start writing to file Z4
+UserThread USER4 request DiskManager to write this line: 4.Z1 Z1111111
+UserThread USER4 request DiskManager to write this line: 4.Z2 Z2222222
+UserThread USER4 request DiskManager to write this line: 4.Z3 Z3333333
+UserThread USER4 request DiskManager to write this line: 4.Z4 Z4444444
+UserThread USER4 request DiskManager to write this line: 4.Z5 Z5555555
+UserThread USER4 request DiskManager to print this file: X4
+DiskManager printing file: X4 on disk: 1 starting at sector: 8
+4.X1 X1111111
+4.Y1 Y1111111
+4.Z1 Z1111111
+4.Z2 Z2222222
+4.Z3 Z3333333
+4.Z4 Z4444444
+UserThread USER4 request DiskManager to print this file: Z4
+DiskManager printing file: Z4 on disk: 1 starting at sector: 10
+4.Z1 Z1111111
+4.Z2 Z2222222
+4.Z3 Z3333333
+4.Z4 Z4444444
+4.Z5 Z5555555
+EOF
+UserThread USER4 request DiskManager to print this file: W4
+DiskManager printing file: W4 on disk: 1 starting at sector: 7
+4.W1 W1111111
+4.X1 X1111111
+4.Y1 Y1111111
+4.Z1 Z1111111
+4.Z2 Z2222222
+4.Z3 Z3333333
+UserThread USER4 request DiskManager to print this file: Y4
+DiskManager printing file: Y4 on disk: 1 starting at sector: 9
+4.Y1 Y1111111
+4.Z1 Z1111111
+4.Z2 Z2222222
+4.Z3 Z3333333
+4.Z4 Z4444444
+4.Z5 Z5555555

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: FXOSSimmulation
+X-COMMENT: Main-Class will be added automatically by build
+Implementation-Version: 1.0
+Permissions: sandbox
+Codebase: *
+JavaFX-Version: 8.0
+Class-Path: 
+Created-By: JavaFX Packager
+Implementation-Vendor: vuqt1
+Main-Class: fxossimmulation.FXOSSimmulation
+

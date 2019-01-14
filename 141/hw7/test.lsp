@@ -1,0 +1,5 @@
+(defun copy (L)
+   (COND ( (atom L) L )
+          (T (cons (copy (car L)) (copy (CDR L))) )
+   )
+ )

@@ -1,0 +1,71 @@
+141OS Start Simulation !!
+UserThread USER1 start writing to file W1
+Disk: Disk0 writing sector: 0
+Disk: Disk0 writing sector: 1
+Disk: Disk0 writing sector: 2
+Disk: Disk0 writing sector: 3
+Disk: Disk0 writing sector: 4
+UserThread USER1 start writing to file X1
+Disk: Disk0 writing sector: 5
+Disk: Disk0 writing sector: 6
+Disk: Disk0 writing sector: 7
+Disk: Disk0 writing sector: 8
+Disk: Disk0 writing sector: 9
+UserThread USER1 start writing to file Y1
+Disk: Disk0 writing sector: 10
+Disk: Disk0 writing sector: 11
+Disk: Disk0 writing sector: 12
+Disk: Disk0 writing sector: 13
+Disk: Disk0 writing sector: 14
+UserThread USER1 start writing to file Z1
+Disk: Disk0 writing sector: 15
+Disk: Disk0 writing sector: 16
+Disk: Disk0 writing sector: 17
+Disk: Disk0 writing sector: 18
+Disk: Disk0 writing sector: 19
+UserThread USER2 start writing to file Y2
+Disk: Disk0 writing sector: 20
+Disk: Disk0 writing sector: 21
+Disk: Disk0 writing sector: 22
+Disk: Disk0 writing sector: 23
+Disk: Disk0 writing sector: 24
+Disk: Disk0 writing sector: 25
+Disk: Disk0 writing sector: 26
+Disk: Disk0 writing sector: 27
+Disk: Disk0 writing sector: 28
+UserThread USER3 start writing to file BAR3
+Disk: Disk0 writing sector: 29
+Disk: Disk0 writing sector: 30
+Disk: Disk0 writing sector: 31
+Disk: Disk0 writing sector: 32
+Disk: Disk0 writing sector: 33
+UserThread USER4 start writing to file F4
+Disk: Disk0 writing sector: 34
+Disk: Disk0 writing sector: 35
+Disk: Disk0 writing sector: 36
+Disk: Disk0 writing sector: 37
+Disk: Disk0 writing sector: 38
+UserThread USER4 start writing to file W4
+Disk: Disk0 writing sector: 39
+Disk: Disk0 writing sector: 40
+Disk: Disk0 writing sector: 41
+Disk: Disk0 writing sector: 42
+Disk: Disk0 writing sector: 43
+UserThread USER4 start writing to file X4
+Disk: Disk0 writing sector: 44
+Disk: Disk0 writing sector: 45
+Disk: Disk0 writing sector: 46
+Disk: Disk0 writing sector: 47
+Disk: Disk0 writing sector: 48
+UserThread USER4 start writing to file Y4
+Disk: Disk0 writing sector: 49
+Disk: Disk0 writing sector: 50
+Disk: Disk0 writing sector: 51
+Disk: Disk0 writing sector: 52
+Disk: Disk0 writing sector: 53
+UserThread USER4 start writing to file Z4
+Disk: Disk0 writing sector: 54
+Disk: Disk0 writing sector: 55
+Disk: Disk0 writing sector: 56
+Disk: Disk0 writing sector: 57
+Disk: Disk0 writing sector: 58

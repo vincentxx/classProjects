@@ -1,0 +1,20 @@
+(load "eval.lsp")
+(my-top)
+l
+"Hello"
+10
+'(a b c)
+(car '(a b c))
+(cdr '(a b c))
+(cons 'd '(a b c))
+(eq 'a 'a)
+(eq '(a b) '(a b)) ; should be nil
+(eq t t)
+(eq nil nil)
+(eq t nil)
+(setq a '(a b c))
+a
+(defun rev (L A) (cond ((null L) A) (t (rev (cdr L) (cons (car L) A)))))
+(rev '(A B C D E) nil)
+(rev a nil)
+(COND ( (eq 'X 'X) (+ 1 2) (+ 3 4)) (T (print 'X)) )  

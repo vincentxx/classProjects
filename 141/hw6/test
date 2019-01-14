@@ -1,0 +1,18 @@
+my_reverse([1, 2, 3], L).
+.
+my_reverse([4, 5], L).
+.
+my_length([[a,b], [c,d], [e,f]], Y).
+.
+my_subset(atom, [], Y).
+.
+my_subset(atom, [a, [bc], c], Y).
+.
+my_member(a,[a,b,c]).
+.
+my_member(Y,[a,b,c]).
+;
+;
+;
+.
+my_intersect([a,b,c],[[c],d,b,e,a], R).

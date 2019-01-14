@@ -1,0 +1,8 @@
+my_reverse(L1, Result):- my_reverse_move(L1, [], Result).
+my_reverse_move([H|T], Container, Result):-
+  my_reverse_move(T, [H|Container], Result).
+my_reverse_move([], L, L).
+
+rev(L,R) :- accRev(L,[],R).
+accRev([H|T],A,R) :- accRev(T,[H|A],R).
+accRev([],A,A). 

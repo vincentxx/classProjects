@@ -1,0 +1,7 @@
+my_reverse([],[]).
+my_reverse([H|T], Result):- my_reverse(T, SubList), my_appendToEnd(H,SubList,Result).
+my_appendToEnd(Item, [], [Item]).
+my_appendToEnd(Item, [H|T], [H|TailResult]):- my_appendToEnd(Item, T, TailResult).   
+spy(my_reverse).
+
+

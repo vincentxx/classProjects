@@ -1,0 +1,39 @@
+["main.pdb"]. 
+my_reverse([a,b,c,d], R).
+.
+my_reverse(O, [a,b,c,d]).
+.
+my_length([[a,b],[c,d],[e,f]], Y).
+.
+my_subset(atom, [a,[b],c], Y).
+.
+my_member(a,[a,b,c]).
+.
+my_member(Y,[a,b,c]).
+.
+my_intersect([a,b,c],[c,b], R).
+.
+my_intersect([a,b,c],[[c],d,b,e,a], R).
+.
+compute-change(33,Q,D,N,P).
+.
+compute-change(182,Q,D,N,P).
+.
+compose([a,b,c],[x,y,z],C).
+.
+compose([a,b,c],[x,y],C).
+.
+compose(L1,L2,[a,b,c]).
+;
+;
+;
+;
+;
+.
+palindrome([m,a,d],R).
+;
+.
+palindrome(B,[n,i,s,s,i,n]).
+;
+.
+

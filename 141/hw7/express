@@ -1,0 +1,10 @@
+<expression> ::= <term>
+              |  <term> '+' <expression>
+              |  <term> '-' <expression>
+<term> ::= <factor>
+        |  <factor> '*' <term>
+        |  <factor> '/' <term>
+<factor> ::= <number>
+          |  '-' <number>
+          |  '(' <expression> ')'
+          |  '-' '(' <expression> ')'

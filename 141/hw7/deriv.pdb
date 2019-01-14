@@ -1,0 +1,49 @@
+deriv(E1+E2, R):- deriv(E1, R1), deriv(E2, R2), simplify_add(R1,R2,R).
+deriv(E1-E2, R):- deriv(E1, R1), deriv(E2, R2), simplify_minus(R1, R2, R).
+deriv(E1*E2, R):- 
+    deriv(E1, R1), deriv(E2, R2), 
+    simplify_mul(E1,R2,Temp1), simplify_mul(E2,R1,Temp2),
+    simplify_add(Temp1, Temp2, R).
+    %R=E1*R2+E2*R1.
+
+deriv(E1/E2, R):-
+    deriv(E1,R1), deriv(E2,R2), 
+    simplify_mul(E2,R1,Temp1), simplify_mul(R2,E1,Temp2),
+    simplify_minus(Temp1, Temp2, Temp3),
+    simplify_mul(E2,E2,Temp4),
+    R=Temp3/Temp4.
+    %R=(R1*E2-R2*E1)/E2*E2.
+
+deriv(E^N, R):- number(N), N1 is N-1, N1==1, R=N*E.
+deriv(E^N, R):- number(N), N1 is N-1, N1\==1, R=N*E^N1.
+deriv(E,0):-number(E).
+deriv(x,1).
+deriv(E,1):-atom(E).
+
+simplify_mul(0,_,0).
+simplify_mul(_,0,0).
+simplify_mul(x,x,x^2).
+simplify_mul(1,X,X).
+simplify_mul(X,1,X).
+simplify_mul(-1,X,-X).
+simplify_mul(X,-1,-X).
+simplify_mul(x^N1,x^N2, x^N):- N is N1+N2.
+simplify_mul(X1,X2,R):- number(X1), number(X2), R is X1*X2.
+simplify_mul(X1,X2,R):- number(X1), not(number(X2)), first(X2,N,Tail), K is X1*N, R=K*Tail.
+simplify_mul(X1,X2,R):- not(number(X1)), number(X2), first(X1,N,Tail), K is X2*N, R=K*Tail.
+simplify_mul(X1,X2,R):- not(number(X1)), not(number(X2)), R=X1*X2.
+
+first(N*X,N,X):-number(N).
+first(N*X,1,X):-not(number(N)).
+first(X,1,X).
+
+simplify_add(0,X,X).
+simplify_add(X,0,X).
+simplify_add(X1,X2,R):- number(X1), number(X2), R is X1+X2.
+simplify_add(X1,X2,R):- R=X1+X2.
+
+simplify_minus(0,X,-X).
+simplify_minus(X,0,X).
+simplify_minus(0,-X,X).
+simplify_minus(X1,X2,R):- number(X1), number(X2), R is X1-X2.
+simplify_minus(X1,X2,R):- R=X1-X2.
