@@ -1,6 +1,3 @@
-/*
- * @Vu Q.Tran, 48894667, HW3@CS141
- */
 #include <iostream>
 #include <initializer_list>
 #include <exception>
