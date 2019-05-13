@@ -1,7 +1,3 @@
-//Name: VU Q TRAN
-//ID:   48894667
-//CS 141, HW 08
-
 import java.util.* ;
 import java.lang.Object.*;
 import java.lang.Math.* ;
